@@ -1,0 +1,134 @@
+Array: 
+         It is a huge block of memory which can store both homogeneous and heterogeneous type of data.
+
+ Three ways:
+ 1. Array literals
+ 2. Array.of()
+ 3. new Array()
+
+ /!01) Push() 
+//? Appends new elements to the end of an array & returns the new length of an array.
+//? The push() method changes the length of the array.
+//? The push() method returns the new length.
+//? The push() method will affect the original array.
+
+//! 02) Pop():
+//? Removes the last element from an array.
+//? The pop() method removes the last element from an array and returns it. If the array is empty,
+//? pop() returns undefined and the array is not modified.
+//? The pop() method will affect the original array.
+
+//! **unshift()**
+//? The unshift() method inserts new elements at the start of the array and returns the new length of the array.
+//? The unshift() method will affect the original array.
+
+//! **shift()**
+//? The shift() method removes the element from the start of the array and returns that removed element.
+//? The shift() method will affect the original array.
+
+//! **slice()**
+//? The slice() method selects elements from an array and returns them as a new array.
+//? The slice() method selects elements from the start index up to, but not including, the end index.
+//? The slice() method does not modify the original array.
+
+//! **splice()**
+//? The splice() method removes elements from an array at the specified position and returns them in a new array.
+//? The splice() method can be used to add or remove elements.
+
+//! **sort**
+//? The sort() method sorts the elements of an array
+// ?The sort() method sorts the elements as strings in alphabetical and ascending order
+// ?The sort() method overwrites the original array
+
+ //! flat()
+ //? flat() is used to convert multi dimension array into single dimension array
+ //?flat() will not effect the original array
+
+ //!reverse
+// ?The reverse() method reverses the order of the elements in an arra
+// ?The reverse() method overwrites the original array
+
+// ! find()
+// ?The find() method returns the value of the first element that passes a test
+// ?The find() method executes a function for each array element
+// ?The find() method returns undefined if no elements are found
+// ?The find() method does not execute the function for empty elements
+// ?The find() method does not change the original array
+
+// !I findIndex(/
+// ?The findIndex() method returns the index (position) of the first element that passes a test.
+// ?The findIndex() method executes a function for each array element.
+// ?The findIndex() method returns 1 if no match is found.
+// ?The findIndex() method does not execute the function for empty array element.
+// ?The findIndex() method does not change the original array.
+
+//!           ****************Map()******************
+//? Map() creates a new array from calling a function for every array element.
+//? Map() does not execute the function for empty elements.
+//? Map() does not change the original array.
+
+//! **Filter()**
+//? The filter() method creates a new array filled with elements that pass a test provided by a function.
+//? The filter() method does not execute the function for empty array elements.
+//? The filter() method does not change the original array.
+
+//! **1. `reduce()`**
+//? higher order function that reduces to an single value
+let arrayre = [10, 20, 30, 40, 50]
+let resultre = arrayre.reduce((acc, val) => {
+    return acc + val
+})
+// console.log(resultre); // 150
+
+let resultrf = arrayre.reduce((acc, val) => {
+    return acc - val
+})
+// console.log(resultrf); // -130
+
+let resultrg = arrayre.reduce((acc, val) => {
+    return acc + val
+}, 10)
+// console.log(resultrg); // 160
+
+//! **2. `sort()`**
+// The `sort()` method sorts the elements of an array.
+// The `sort()` method sorts the elements of an array in alphabetical and ascending order.
+//! The `sort()` method overwrites the original array.
+
+//! ** FOR IN AND FOR OF**
+let arrayfor = [10, 20, 30, 40, 50];
+
+// 1) for-in-loop  // returns the index value of the keys
+for (let keyjj in arrayfor) {
+    // console.log(keyjj);
+}
+
+// 2) for-of-loop
+for (let value of arrayfor) {
+    // console.log(value); //will return the value fo the keys of an array.
+}
+
+// 3) for-of-loop with keys()
+for (let key of arrayfor.keys()) {
+    // console.log(key); // will returns the index of keys 
+}
+
+// 4) for-of-loop with values()
+for (let value of arrayfor.values()) {
+    // console.log(value); // will return the values.
+}
+
+// 5) for-of loop with keys()
+for (let keys of arrayfor.entries()) { // it will return both keys and value(index position and value);
+    // console.log(keys);
+}
+
+ Destructuring in JavaScript
+// Destructuring Assignment is a javascript expression that allows to unpack of  values from arrays.
+
+//! **Rest Operator:**
+// In order to assign some array elements to variables and rest of the array elements to only a single variable, use the Rest Operator `...`
+
+
+
+
