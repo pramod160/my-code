@@ -1,0 +1,39 @@
+
+.weather{
+    margin: 50px;
+    width: 400px;
+}
+
+.inputt{
+    margin-top:10px 
+}
+
+.cont{
+    margin: 30px 50px;
+    border: 1px solid black;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+/* ______________________________________________________
+Movie API */
+.movies{
+    margin: 50px;
+    width: 400px;
+}
+
+.containers{
+    margin: 30px 50px;
+    border: 1px solid black;
+    padding: 18px;
+    border-radius: 10px;
+
+}
+
+.btn-custom {
+    background-color: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+}
