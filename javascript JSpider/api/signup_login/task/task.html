@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+<form action="" id="form">
+    <h1>Signup Form</h1>
+    <div>
+        <input type="text" name="username" placeholder="Enter Your name" id="fname" autocomplete="fname">
+        <span id="error5" style="color: red;"></span>
+    </div>
+    <div style="" id="form">
+        <label for="male">Male</label><input type="radio" name="gender" id="male">
+        <label for="female">Female</label><input type="radio" name="gender" id="female">
+        <div >
+            <span id="error7" style="color: red;"></span>
+        </div>
+    </div>
+
+    <div>
+        <input type="number" name="number" placeholder="Enter Your number" id="number" autocomplete="number">
+        <span id="error1" style="color: red;"></span>
+    </div>
+    <div>
+        <input type="date" name="date" placeholder="Enter Your DOB" id="dob">
+        <span id="error6" style="color: red;"></span>
+    </div>
+    <div>
+        <input type="email" name="email" placeholder="Enter Your email" id="email" autocomplete="email">
+        <span id="error2" style="color: red;"></span>
+    </div>
+    <div>
+        <input type="password" name="pwd" placeholder="Enter Your password" id="pwd" autocomplete="pwd">
+        <span id="error3" style="color: red;"></span>
+    </div>
+    <div>
+        <input type="password" name="rpwd" placeholder="Enter your password again" id="rpwd" autocomplete="rpwd">
+        <span id="error4" style="color: red;"></span>
+    </div>
+    <div>
+        <button type="submit" id="submit_btn">Sign up</button>
+    </div>
+    <div>
+        <button type="reset" id="reset_btn">Reset</button>
+    </div>
+    <div style="display: flex;">
+        <p>already have an account  </p>
+        <a href="../login.html"> click</a>
+    </div>
+</form>
+    <script src="./task.js"></script>
+</body>
+</html>

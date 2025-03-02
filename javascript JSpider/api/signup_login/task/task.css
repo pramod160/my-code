@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{  /* html, body { */
+    height: 120vh;
+}
+
+body {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    height: 120vh;
+    background: linear-gradient(to bottom right, rgb(0, 255, 242),rgb(98, 245, 142), rgb(79, 194, 44));
+}
+
+form {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    width: 330px;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+}
+
+input[type=radio]{
+    width: 30px;
+    height: 14px;
+    margin-right: 40px;
+}
+
+input[type="date"] {
+    background-color: black;
+    color: white; 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+label{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(22, 9, 3);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 14px;
+    /* background-color: #007bff; */
+    background: linear-gradient(to right, rgb(0, 255, 242), rgb(79, 194, 44));
+    cursor: pointer;
+    box-sizing: border-box;
+    color: black;
+}
+
+button[id=reset_btn] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 14px;
+    /* background-color: #007bff; */
+    background: linear-gradient(to right, red, rgb(79, 194, 44));
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: black;
+}
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+.warning {
+    border: 2px solid red;
+    outline: none;
+}
+
+.success {
+    border: 2px solid green;
+    outline: none;
+}
+
+#error1, #error2, #error3, #error4, #error5, #error6 {
+    color: red;
+}
+
+#error7{
+    width: 100%;
+    height: 5px;
+    margin-top: 50px;
+}
